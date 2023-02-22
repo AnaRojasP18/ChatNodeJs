@@ -13,7 +13,7 @@ io.on('connection',(socket)=>{
         console.log('Mensaje: '+msg)
     })*/
 
-    socket.on('chat',(msg)=>{
+    socket.on('chat',(msg) => {
         io.emit('chat',msg)
     })
 })
